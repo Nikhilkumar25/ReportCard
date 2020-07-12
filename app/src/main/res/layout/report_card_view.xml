@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Name: "
+            android:textColor="#0B0B0B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Physics Marks: "
+            android:textColor="#0B0B0B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mathematics Marks:"
+            android:textColor="#0B0B0B"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Chemistry Marks: "
+            android:textColor="#0B0B0B"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/studentNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name_input"
+            android:textSize="21sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/physicsMarksView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="marks_input"
+            android:textSize="21sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/mathMarksView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="marks_input"
+            android:textSize="21sp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/chemistryMarksView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="marks_input"
+            android:textSize="21sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.4"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:id="@+id/delete_single_btn" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

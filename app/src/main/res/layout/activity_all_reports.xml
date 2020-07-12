@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    tools:context=".AllReports"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           style="@style/Widget.AppCompat.Button.Borderless.Colored"
+           android:layout_width="0dp"
+           android:layout_weight="4"
+           android:layout_height="wrap_content"
+           android:text="@string/clear_all"
+           android:onClick="DeleteAll"/>
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_weight="0.5"
+           android:layout_height="match_parent"
+           android:src="@drawable/ic_baseline_refresh_24"
+           android:onClick="reFresh"/>
+   </LinearLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid_report"
+        />
+
+</LinearLayout>
